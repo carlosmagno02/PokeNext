@@ -29,11 +29,12 @@ export default async function Home() {
           height="30"
           alt="PokeNext"
           title="PokeNext"
+          unoptimized
         />
       </div>
       <div className={styles.container}>
         {pokemons.map((pokemon) => (
-          <Card pokemon={pokemon} />
+          <Card pokemon={pokemon} key={pokemon.id} />
         ))}
       </div>
     </section>
